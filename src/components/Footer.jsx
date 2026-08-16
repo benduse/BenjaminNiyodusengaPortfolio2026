@@ -3,8 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <p>
-          © {new Date().getFullYear()} Benjamin Niyodusenga. Built with React
-          &amp; Vite.
+          © {new Date().getFullYear()} Benjamin Niyodusenga. All rights reserved.
         </p>
         <div className="footer__links">
           <a href="https://github.com/benduse" target="_blank" rel="noreferrer">
