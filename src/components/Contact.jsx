@@ -54,8 +54,8 @@ export default function Contact() {
             </button>
             <p className="form-note">
               {status === 'submitted'
-                ? 'This form isn\'t connected to an email service yet — for now, please reach out directly at the email above.'
-                : 'This form needs to be connected to an email service (e.g. Formspree or Netlify Forms) before it can deliver messages.'}
+                ? 'Thank you for contacting Benjamin.'
+                : 'Benjamin will be in touch as soon as administratively possible.'}
             </p>
           </form>
         </Reveal>
