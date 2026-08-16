@@ -50,48 +50,6 @@ export const projects = [
     liveDemo: "https://www.youtube.com/watch?v=TeVlsXEiIHs",
   },
   {
-    id: "moodhabit",
-    title: "MoodHabit",
-    category: ["Full Stack", "React"],
-    tagline:
-      "A mood-adaptive habit tracker that adjusts its suggestions based on how you're actually feeling that day.",
-    problem:
-      "Most habit trackers treat every day the same, which makes them easy to abandon on hard days. MoodHabit logs mood alongside habits and uses a small rule engine to suggest realistic, scaled-down goals when things are harder than usual.",
-    role: "Designed the data model, built the rule engine that maps mood to habit suggestions, and implemented the UI and animation layer.",
-    architecture:
-      "React 18 + TypeScript → local rule engine → localStorage / Supabase dual data layer",
-    features: [
-      "Rule engine that adapts daily habit suggestions based on logged mood",
-      "Dual data layer: works offline with localStorage, syncs to Supabase when available",
-      "Typed data models across the app with TypeScript",
-      "Motion and micro-interactions built with Framer Motion",
-      "Tailwind-based responsive layout",
-    ],
-    challenges: [
-      {
-        challenge:
-          "Habit logic needed to feel personal without becoming a black box.",
-        solution:
-          "Wrote the suggestion logic as an explicit, readable rule engine rather than a model, so behavior stays predictable and easy to extend.",
-      },
-      {
-        challenge:
-          "Supporting both offline use and cross-device sync without duplicating logic.",
-        solution:
-          "Built a dual data layer that reads/writes through a shared interface, backed by localStorage or Supabase depending on connection state.",
-      },
-    ],
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Supabase",
-      "Framer Motion",
-    ],
-    github: "coming soon",
-    liveDemo: "Coming soon",
-  },
-  {
     id: "call-center-data-engine",
     title: "Call Center Data Engine",
     category: ["Data", "Backend", "Python"],
@@ -208,6 +166,80 @@ export const projects = [
     github: "https://github.com/benduse/venivici",
     liveDemo: "https://www.youtube.com/watch?v=nT33Tb4CBiU&t=22s",
   },
+  {
+    id: "moodhabit",
+    title: "MoodHabit",
+    category: ["Full Stack", "React"],
+    tagline:
+      "A mood-adaptive habit tracker that adjusts its suggestions based on how you're actually feeling that day.",
+    problem:
+      "Most habit trackers treat every day the same, which makes them easy to abandon on hard days. MoodHabit logs mood alongside habits and uses a small rule engine to suggest realistic, scaled-down goals when things are harder than usual.",
+    role: "Designed the data model, built the rule engine that maps mood to habit suggestions, and implemented the UI and animation layer.",
+    architecture:
+      "React 18 + TypeScript → local rule engine → localStorage / Supabase dual data layer",
+    features: [
+      "Rule engine that adapts daily habit suggestions based on logged mood",
+      "Dual data layer: works offline with localStorage, syncs to Supabase when available",
+      "Typed data models across the app with TypeScript",
+      "Motion and micro-interactions built with Framer Motion",
+      "Tailwind-based responsive layout",
+    ],
+    challenges: [
+      {
+        challenge:
+          "Habit logic needed to feel personal without becoming a black box.",
+        solution:
+          "Wrote the suggestion logic as an explicit, readable rule engine rather than a model, so behavior stays predictable and easy to extend.",
+      },
+      {
+        challenge:
+          "Supporting both offline use and cross-device sync without duplicating logic.",
+        solution:
+          "Built a dual data layer that reads/writes through a shared interface, backed by localStorage or Supabase depending on connection state.",
+      },
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Framer Motion",
+    ],
+    github: "coming soon",
+    liveDemo: "Coming soon",
+  },
+  {
+    id: "ejoapp",
+    title: "EjoApp",
+    category: ["Frontend", "JavaScript"],
+    tagline:
+      "A flashcard app for Kinyarwanda learners, built to make daily practice stick.",
+    problem:
+      "Most flashcard apps don't account for the unique challenges of learning Kinyarwanda, leading to ineffective study sessions.",
+    role: "Designed the data model, implemented the flashcard review algorithm, and built the UI.",
+    architecture: "JavaScript (Vanilla)  → localStorage for offline access",
+    features: [
+      "Intuitive UI for reviewing flashcards with spaced repetition",
+      "Offline access with localStorage",
+      "flashcards with Kinyarwanda words and phrases",
+    ],
+    challenges: [
+      {
+        challenge:
+          "Flashcard content needed to be engaging and contextually relevant.",
+        solution:
+          "Collaborated with Kinyarwanda learners to understand their needs and curate a diverse set of flashcards that reflect real-world usage.",
+      },
+      {
+        challenge: "Heavy reliance on user-generated content for flashcards.",
+        solution:
+          "Implemented a robust content moderation system to ensure quality and relevance of user-generated flashcards.",
+      },
+    ],
+    technologies: ["JSON", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/benduse/ejo-app",
+    liveDemo: "Coming soon",
+  },
 ];
 
-export const filters = ["All", "Frontend", "Full Stack", "Backend", "Data", "React", "Python"]
+export const filters = ["All", "Frontend", "Full Stack", "Backend", "Data", "JavaScript", "React", "Python"];
