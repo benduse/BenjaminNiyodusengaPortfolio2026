@@ -13,14 +13,14 @@ export const experience = [
     role: "Software & Data Engineering Training",
     period: "Apr 2026 – Jun 2026",
     summary:
-      "Trained across backend and data engineering tracks: built RESTful APIs with Java and Spring, and built a Python/SQL data pipeline for a simulated call center, completing 108 coding activities and 14 technical evaluations.",
-    highlights: ["Java", "Spring Boot", "SQL", "REST APIs", "Python", "JUnit", "Mockito", "Agile"],
+      "Trained across backend and data engineering tracks: built RESTful APIs with Java and Springboot, and built a Python/SQL data pipeline for a simulated call center, completing 108 coding activities and 14 technical evaluations.",
+    highlights: ["Java", "Spring Boot", "SQL", "REST APIs", "Python", "Agile"],
     relatedProjectId: "call-center-data-engine",
   },
   {
     org: "Verizon",
     role: "Bilingual Retail Specialist",
-    period: "Prior experience",
+    period: "March 2025 – November 2025",
     summary:
       "Diagnosed and resolved technical issues for customers, walked non-technical users through software installs and upgrades, and communicated cybersecurity best practices — experience that now shapes how I write documentation and explain technical trade-offs to non-engineers.",
     highlights: ["Technical troubleshooting", "Customer education", "Cybersecurity awareness", "Bilingual communication"],

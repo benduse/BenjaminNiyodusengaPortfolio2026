@@ -203,7 +203,6 @@ export const projects = [
       "TypeScript",
       "Tailwind CSS",
       "Supabase",
-      "Framer Motion",
     ],
     github: "coming soon",
     liveDemo: "Coming soon",
