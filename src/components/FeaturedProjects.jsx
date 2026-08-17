@@ -17,18 +17,18 @@ export default function FeaturedProjects() {
     <section id="projects" className="section">
       <div className="container">
         <Reveal>
-          <div className="section-head">
+          <div className="section_heading">
             <span className="eyebrow">Featured Projects</span>
             <h2>What I've built</h2>
             <p>A selection of applications and technical projects I've built while developing my full-stack engineering skills.</p>
           </div>
         </Reveal>
 
-        <div className="filter-bar" role="group" aria-label="Filter projects by category">
+        <div className="projects_filter_bar" role="group" aria-label="Filter projects by category">
           {filters.map((f) => (
             <button
               key={f}
-              className={`filter-chip ${activeFilter === f ? 'is-active' : ''}`}
+              className={`projects_filter_chip ${activeFilter === f ? 'is_active' : ''}`}
               onClick={() => setActiveFilter(f)}
               aria-pressed={activeFilter === f}
             >
@@ -37,7 +37,7 @@ export default function FeaturedProjects() {
           ))}
         </div>
 
-        <div className="project-grid">
+        <div className="projects_grid">
           {visible.map((p) => (
             <Reveal key={p.id}>
               <ProjectCard project={p} onOpen={setSelected} />

@@ -17,12 +17,12 @@ export default function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar__inner">
-        <a href="#home" className="navbar__logo">
+      <div className="navbar_inner">
+        <a href="#home" className="navbar_logo">
           Benjamin <span>Niyodusenga</span>
         </a>
         <button
-          className="navbar__toggle"
+          className="navbar_menu_toggle"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
@@ -31,9 +31,9 @@ export default function Navbar() {
           <span style={open ? { opacity: 0 } : undefined} />
           <span style={open ? { transform: 'translateY(-7px) rotate(-45deg)' } : undefined} />
         </button>
-        <nav className={`navbar__links ${open ? 'is-open' : ''}`}>
+        <nav className={`navbar_links ${open ? 'is_open' : ''}`}>
           {links.map((l) => (
-            <a key={l.href} href={l.href} className={l.primary ? 'is-primary' : ''} onClick={handleClick}>
+            <a key={l.href} href={l.href} className={l.primary ? 'is_primary_nav_link' : ''} onClick={handleClick}>
               {l.label}
             </a>
           ))}

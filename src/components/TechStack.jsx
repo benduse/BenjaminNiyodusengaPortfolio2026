@@ -6,16 +6,16 @@ export default function TechStack() {
     <section id="skills" className="section">
       <div className="container">
         <Reveal>
-          <div className="section-head">
+          <div className="section_heading">
             <span className="eyebrow">Technical Stack</span>
             <h2>Tools I build with</h2>
             <p>The projects above are the real evidence — this is simply the toolkit behind them.</p>
           </div>
         </Reveal>
-        <div className="stack-grid">
+        <div className="techstack_grid">
           {skills.map((group) => (
             <Reveal key={group.category}>
-              <div className="stack-card">
+              <div className="techstack_card surface_card">
                 <h3>{group.category}</h3>
                 <ul>
                   {group.items.map((item) => <li key={item}>{item}</li>)}

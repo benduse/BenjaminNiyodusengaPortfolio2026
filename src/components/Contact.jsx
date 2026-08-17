@@ -16,43 +16,42 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container contact">
         <Reveal>
-          <div className="contact__intro">
+          <div className="contact_intro">
             <span className="eyebrow">Contact</span>
             <h2>Have a project, opportunity, or problem worth solving?</h2>
             <p>Let's connect. I'm currently open to full-stack developer roles and always glad to talk through interesting problems.</p>
-            <div className="contact__channels">
+            <div className="contact_channels">
               <a href="mailto:benjaminiyodusenga@gmail.com">benjaminiyodusenga@gmail.com</a>
               <a href="https://github.com/benduse" target="_blank" rel="noreferrer">github.com/benduse</a>
-              {/* TODO: replace with your actual LinkedIn profile URL */}
               <a href="https://www.linkedin.com/in/benjaminniyodusenga/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             </div>
           </div>
         </Reveal>
 
         <Reveal>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-row">
-              <div className="field">
-                <label htmlFor="name">Name</label>
-                <input id="name" name="name" type="text" required autoComplete="name" />
+          <form className="contact_form surface_card" onSubmit={handleSubmit}>
+            <div className="contact_form_row">
+              <div className="contact_form_field">
+                <label htmlFor="contact_name_input">Name</label>
+                <input id="contact_name_input" name="name" type="text" required autoComplete="name" />
               </div>
-              <div className="field">
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" required autoComplete="email" />
+              <div className="contact_form_field">
+                <label htmlFor="contact_email_input">Email</label>
+                <input id="contact_email_input" name="email" type="email" required autoComplete="email" />
               </div>
             </div>
-            <div className="field">
-              <label htmlFor="subject">Subject</label>
-              <input id="subject" name="subject" type="text" required />
+            <div className="contact_form_field">
+              <label htmlFor="contact_subject_input">Subject</label>
+              <input id="contact_subject_input" name="subject" type="text" required />
             </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" required />
+            <div className="contact_form_field">
+              <label htmlFor="contact_message_textarea">Message</label>
+              <textarea id="contact_message_textarea" name="message" rows="5" required />
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn_primary">
               {status === 'submitted' ? 'Message ready ✓' : 'Send Message'}
             </button>
-            <p className="form-note">
+            <p className="contact_form_note">
               {status === 'submitted'
                 ? 'Thank you for contacting Benjamin.'
                 : 'Benjamin will be in touch as soon as administratively possible.'}

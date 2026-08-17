@@ -21,7 +21,7 @@ export default function Reveal({ children, as: Tag = 'div', className = '' }) {
   }, [])
 
   return (
-    <Tag ref={ref} className={`reveal ${visible ? 'is-visible' : ''} ${className}`}>
+    <Tag ref={ref} className={`scroll_reveal ${visible ? 'is_visible' : ''} ${className}`}>
       {children}
     </Tag>
   )

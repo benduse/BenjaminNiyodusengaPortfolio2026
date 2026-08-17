@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="section section--muted">
       <div className="container about">
         <Reveal>
-          <div className="about__lines">
+          <div className="about_content">
             <span className="eyebrow">About Me</span>
             <p>
               I'm a software developer who discovered my passion for technology through a unique
@@ -30,7 +30,7 @@ export default function About() {
               creativity, engineering, and data to build scalable applications that solve
               meaningful problems.
             </p>
-            <p className="about__note">
+            <p className="about_personal_note">
               Outside of code, I'm a lifelong learner and language enthusiast — I speak English,
               French, Spanish, Kinyarwanda, and Russian, and I'm coachable, curious, and glad to contribute
               as part of a team.
@@ -39,7 +39,7 @@ export default function About() {
         </Reveal>
 
         <Reveal>
-          <div className="about__aside">
+          <div className="about_quick_facts">
             <h3>Quick facts</h3>
             <ul>
               <li><span>Based in</span><span>Phoenix, AZ</span></li>
