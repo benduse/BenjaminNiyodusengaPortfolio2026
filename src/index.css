@@ -171,10 +171,8 @@ button {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid transparent;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    background 0.15s ease;
+  min-height: 44px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 .btn:hover {
   transform: translateY(-1px);
@@ -215,8 +213,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 249, 245, 0.88);
-  backdrop-filter: blur(10px);
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
 .navbar_inner {
@@ -247,9 +244,7 @@ button {
   color: var(--text);
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
-  transition:
-    border-color 0.15s ease,
-    color 0.15s ease;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 .navbar_links a:hover {
   color: var(--navy);
@@ -261,15 +256,17 @@ button {
 }
 .navbar_menu_toggle {
   display: none;
-  background: transparent;
+  background: var(--navy);
   border: none;
-  padding: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 .navbar_menu_toggle span {
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--navy);
+  background: #fff;
   margin: 5px 0;
   transition: 0.2s;
 }
@@ -281,39 +278,55 @@ button {
   .navbar_links {
     position: fixed;
     inset: 64px 0 0 0;
-    background: var(--bg);
+    background: var(--navy);
     flex-direction: column;
     align-items: flex-start;
-    padding: 32px 28px;
-    gap: 22px;
+    padding: 36px 28px;
+    gap: 8px;
     transform: translateX(100%);
     transition: transform 0.25s ease;
     overflow-y: auto;
     z-index: 100;
+    border-top: 2px solid var(--gold);
   }
   .navbar_links.is_open {
     transform: translateX(0);
   }
   .navbar_links a {
     font-size: 1.1rem;
-    padding: 10px 0;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 14px 0;
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .navbar_links a:last-child {
+    border-bottom: none;
+  }
+  .navbar_links a:hover,
+  .navbar_links a.is_primary_nav_link {
+    color: var(--gold);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
   }
 }
 
 /* ─── Hero ───────────────────────────────────────────────── */
 .hero {
-  padding: 72px 0 88px;
+  padding: 48px 0 56px;
 }
 .hero_inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
+  grid-template-columns: 1fr;
+  gap: 36px;
   align-items: center;
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
+  .hero {
+    padding: 72px 0 88px;
+  }
   .hero_inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
   }
 }
 
@@ -345,9 +358,18 @@ button {
 
 .hero_cta_group {
   display: flex;
-  gap: 14px;
-  margin-top: 34px;
+  gap: 12px;
+  margin-top: 28px;
   flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .hero_cta_group {
+    flex-direction: column;
+  }
+  .hero_cta_group .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .hero_social_links {
   display: flex;
@@ -461,7 +483,7 @@ button {
 .projects_filter_bar {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 36px;
 }
 .projects_filter_chip {
@@ -473,6 +495,7 @@ button {
   background: var(--surface);
   color: var(--muted);
   transition: all 0.15s ease;
+  min-height: 44px;
 }
 .projects_filter_chip:hover {
   border-color: var(--navy);
@@ -952,8 +975,13 @@ button {
   color: var(--teal);
 }
 .contact_form {
-  padding: 32px;
+  padding: 28px 24px;
   box-shadow: var(--shadow);
+}
+@media (min-width: 600px) {
+  .contact_form {
+    padding: 32px;
+  }
 }
 .contact_form_row {
   display: grid;
@@ -981,11 +1009,12 @@ button {
 .contact_form_field textarea {
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 11px 14px;
+  padding: 12px 14px;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: var(--bg);
   color: var(--text);
+  min-height: 44px;
 }
 .contact_form_field input:focus,
 .contact_form_field textarea:focus {
@@ -1009,6 +1038,13 @@ button {
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
+}
+@media (max-width: 480px) {
+  .footer_inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 .footer_inner p {
   color: var(--muted);
