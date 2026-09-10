@@ -87,3 +87,10 @@ src/
 - **Project images** — add an `image` field to a project in `projects.js` and render an `<img>` in `ProjectCard.jsx` in place of the gradient placeholder.
 - **Contact form** — the form in `Contact.jsx` is UI-only. Wire it to Netlify Forms, Formspree, or a serverless function before relying on it.
 - **OG image** — add a real `og-image.png` (1200×630) to `public/` to replace the placeholder reference in `index.html`.
+-= adding more visuals: save the video and add it ot the website to increase visuals and make hte layout better
+- the web has a lot of texts different color variations as well
+- work on the font and change it 
+- add learn more button to show about me after I build websites
+- hamburger icon does not have contrasts which hides the options ont eh menu add contrast
+- use animation accross the screen since there is a lot of text
+- change the portfolio name when you publish it so that it is a smaller domain name.

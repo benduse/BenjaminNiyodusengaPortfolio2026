@@ -25,29 +25,7 @@ export default function Hero() {
             combining frontend engineering, backend development, and analytical
             problem solving.
           </p>
-          <div className="hero_cta_group">
-            <a href="#projects" className="btn btn_primary">
-              View Projects
-            </a>
-            <a href="#contact" className="btn btn_secondary">
-              Contact Me
-            </a>
-          </div>
-          <div className="hero_social_links">
-            <a href="https://github.com/benduse" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/benjaminniyodusenga/" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href="mailto:benjaminiyodusenga@gmail.com">
-              benjaminiyodusenga@gmail.com
-            </a>
-          </div>
-          <div className="hero_scroll_hint">
-            <span className="hero_scroll_line" />
-            Scroll to explore
-          </div>
+       
         </div>
 
         <div className="hero_stack_panel">

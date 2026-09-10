@@ -6,6 +6,7 @@ import TechStack from './components/TechStack.jsx'
 import EngineeringMindset from './components/EngineeringMindset.jsx'
 import Experience from './components/Experience.jsx'
 import Education from './components/Education.jsx'
+import Blog from './components/Blog.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <FeaturedProjects />
         <About />
+        <Blog />
         <TechStack />
         <EngineeringMindset />
         <Experience />
